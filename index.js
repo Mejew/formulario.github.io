@@ -26,7 +26,7 @@ const listar = () => {
     tbody.innerHTML = reg;
 }
 const validar = ({ identificacion, nombre, apellido, edad, direccion, ciudad, correo }) => {
-    const id = tabla.find(item => item.identificacion === parseInt(identificacion.value));
+    const id = tabla.find(item => item.identificacion ===(identificacion.value));
     const email = tabla.find(item => item.correo === correo.value);
 
     if (id) {
@@ -71,6 +71,10 @@ const validar = ({ identificacion, nombre, apellido, edad, direccion, ciudad, co
         return false;
     } else if (!correo.value.trim()) {
         alert("Por favor ingrese su correo")
+        correo.focus()
+        return false;
+    }else if(!(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(correo.value))){
+        alert("Por favor, ingrese un correo valido.")
         correo.focus()
         return false;
     }
