@@ -1,8 +1,8 @@
-let tabla=[
-    {identificacion: 12345 ,nombre: 'mara', apellido: 'gonzalez',genero:'Femenino',edad:12, direccion: 'calle 89', ciudad:'Barranquilla',correo:'mari@gmail.com' },
-    {identificacion: 12345 ,nombre: 'mara', apellido: 'gonzalez',genero:'Femenino',edad:12, direccion: 'calle 89', ciudad:'Barranquilla',correo:'mari@gmail.com' },
-    {identificacion: 12345 ,nombre: 'mara', apellido: 'gonzalez',genero:'Femenino',edad:12, direccion: 'calle 89', ciudad:'Barranquilla',correo:'mari@gmail.com' }
-]
+const tabla = [
+    { identificacion: 1234567, nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'mari@gmail.com' },
+    { identificacion: 1234534, nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'matito@gmail.com' },
+    { identificacion: 1223499, nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'aaaa@gmail.com' }
+];
 let i =1;
 let cuerpotabla = document.getElementById('data');
 
