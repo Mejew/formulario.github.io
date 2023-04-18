@@ -1,7 +1,7 @@
 const tabla = [
-    { identificacion: 1234567, nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'mari@gmail.com' },
-    { identificacion: 1234534, nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'matito@gmail.com' },
-    { identificacion: 1223499, nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'aaaa@gmail.com' }
+    { identificacion: "1234567", nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'mari@gmail.com' },
+    { identificacion: "1234534", nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'matito@gmail.com' },
+    { identificacion: "1223499", nombre: 'mara', apellido: 'gonzalez', genero: 'Femenino', edad: 12, direccion: 'calle 89', ciudad: 'Barranquilla', correo: 'aaaa@gmail.com' }
 ];
 let i =1;
 let cuerpotabla = document.getElementById('data');
@@ -9,7 +9,7 @@ let cuerpotabla = document.getElementById('data');
 const listar=()=>{
     let usuarios = ""; 
     for (let i = 0; i< tabla.length; i++) {
-      usuarios+=`<tr><th scope="row">${i+1}</th><td>${tabla[i].identificacion}</td><td>${tabla[i].nombre}</td><td>${tabla[i].apellido}</td><td>${tabla[i].genero}</td><td>${tabla[i].edad}</td><td>${tabla[i].direccion}</td><td>${tabla[i].ciudad}</td><td>${tabla[i].correo}</td></tr>`
+      usuarios+=`<tr><th scope="row">${i+1}</th><td>${tabla[i].identificacion}</td><td>${tabla[i].nombre}</td><td>${tabla[i].apellido}</td><td>${tabla[i].genero}</td><td>${tabla[i].edad} años</td><td>${tabla[i].direccion}</td><td>${tabla[i].ciudad}</td><td>${tabla[i].correo}</td></tr>`
        
     }
     cuerpotabla.innerHTML=usuarios;
