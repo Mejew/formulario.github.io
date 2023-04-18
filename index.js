@@ -18,7 +18,7 @@ const listar=()=>{
 function validarNumero(input) {
     let texto = input.value;
     if (texto.length == 0) {
-        alert("debe llenar el campo");
+        alert("Debe llenar el campo");
         input.focus();
     } else {
         let num = parseInt(texto);
